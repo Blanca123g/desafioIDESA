@@ -82,6 +82,6 @@
 ### Desafio #3
 * Realiza un Servicio REST que retorne todos los lotes datos de un lote segun el id enviado como parametro, utilizando la base idesa.db del Archivo Database.php
 
-
+**Observacion:** Se agrega el postman collection correspondiente al ejercicio 3 del Desafio 2 en la carpeta tools
 
 # Exitos!

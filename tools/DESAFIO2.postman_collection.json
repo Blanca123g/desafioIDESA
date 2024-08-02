@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "1c099238-4df6-4a47-8e95-aed504f7ac0a",
+		"name": "DESAFIO2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37283812"
+	},
+	"item": [
+		{
+			"name": "webservice",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

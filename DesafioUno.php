@@ -5,7 +5,7 @@ require_once 'Database.php';
 class DesafioUno {
 
 
-    public static function getClientDebt (int $clientID)
+    public static function getClientDebt (string $clientID)
     {
         Database::setDB();
 
@@ -19,12 +19,10 @@ class DesafioUno {
 
 
         foreach($lotes as $lote){
+            
+            if(!($lote->vencimiento || $lote->vencimiento > date('Y-m-d'))) continue;
 
-        
-            if($lote->vencimiento || $lote->vencimiento > date('Y-m-d')) continue;
-
-
-            if($lote->client_ID !== $clientID) continue;
+            if($lote->clientID !== $clientID) continue;
             
 
             

@@ -1,13 +1,13 @@
 <?php 
 require_once 'Database.php';
 
-class DesafioDos {
+class recuperarLotes {
 
-    public static function retriveLotes(string $loteID):void {
+    public static function getByLoteId(string $loteID) {
 
-        Database::setDB(); 
+        Database::setDB();
 
-        echo(json_encode(self::getLotes($loteID)));
+        return self::getLotes($loteID);
     }
 
     private static function getLotes (string $loteID){
@@ -20,5 +20,3 @@ class DesafioDos {
         return $lotes;
     }
 }
-
-DesafioDos::retriveLotes('00148');
